@@ -1,0 +1,178 @@
+.color1 {
+  background: #536DFE;
+}
+.color2 {
+  background: #212121;
+}
+.color3 {
+  background: #D32F2F;
+}
+.color4 {
+  background: #E64A19;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: "Roboto Condensed", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+}
+.wrapper {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.container {
+  padding: 2em 0 3em;
+  overflow: hidden;
+}
+.part1 {
+  background-image: url(https://unsplash.it/800/?image=525);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-flow: column;
+}
+.cover-holder {
+  margin: auto;
+  max-width: 300px;
+  padding: 0 12px;
+}
+.cover-holder h1 {
+  font-size: 2em;
+  color: #fffff0;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-bottom: 12px;
+}
+.cover-holder h1 span {
+  display: block;
+  color: rgba(20, 20, 20, 0.45);
+  font-weight: 700;
+  font-size: 4rem;
+}
+.cover-holder p {
+  font-size: 0.925em;
+  color: #fffff0;
+  text-align: center;
+  border-top: 1px solid #f0f0ff;
+  border-bottom: 1px solid #f0f0ff;
+  padding: 8px 0;
+  font-family: "Roboto Slab";
+  font-weight: 300;
+}
+@media only screen and (min-width: 400px) {
+  .cover-holder h1 {
+    font-size: 3em;
+  }
+  .cover-holder h1 span {
+    font-size: 8rem;
+  }
+  .cover-holder p {
+    font-size: 1.5em;
+  }
+}
+.part2 {
+  padding: 0;
+}
+.story {
+  display: flex;
+  flex-flow: row wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+}
+.story .picture-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.story .picture-box:before {
+  content: " ";
+  display: block;
+  padding-top: 100%;
+}
+.story .picture-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.story .textbox {
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  padding: 2em;
+}
+.story .textbox h3 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5em;
+  line-height: 1;
+  font-weight: 100;
+}
+.story .textbox h2 {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 2.5em;
+  line-height: 1;
+  font-weight: 700;
+}
+.story .textbox p {
+  color: #fff;
+  font-size: 1em;
+  margin-top: auto;
+}
+@media only screen and (min-width: 500px) {
+  .story {
+    flex-flow: row;
+  }
+  .picture-box,
+  .textbox {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .wrapper .part1 {
+    width: 40%;
+    position: fixed;
+    height: 100vh;
+  }
+  .wrapper .part2 {
+    width: 60%;
+    float: right;
+  }
+}
+@media only screen and (min-width: 1060px) {
+  .wrapper .part1 {
+    width: 50%;
+  }
+  .wrapper .part2 {
+    width: 50%;
+  }
+}
+

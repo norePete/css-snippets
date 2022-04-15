@@ -1,0 +1,101 @@
+.text-wrapper .backdrop {
+  position: relative;
+}
+
+.text-wrapper .bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.text-wrapper .text {
+	margin: -1px;
+  position: relative;
+  z-index: 2;
+}
+
+.text-wrapper .text strong {
+  font-weight: 900;
+}
+
+/* White */
+.text-wrapper.white {
+  background: white;
+}
+
+.text-wrapper.white .screen {
+	color: black;
+	mix-blend-mode: screen;
+	background-color: white;
+}
+
+.text-wrapper.white .screen::selection,
+.text-wrapper.white .screen strong::selection {
+  background: black;
+  color: white;
+}
+
+/* Black */
+.text-wrapper.black {
+  background: black;
+}
+
+.text-wrapper.black .screen {
+	color: white;
+	mix-blend-mode: multiply;
+	background-color: black;
+}
+
+.text-wrapper.black .screen::selection,
+.text-wrapper.black .screen strong::selection {
+  background: white;
+  color: black;
+}
+
+/* General styling, not neccessary to function properly */
+body {
+  font-family: sans-serif;
+  background: lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+body, a, video {
+  cursor: auto !important;
+}
+
+.text-wrapper {
+  padding: 25px 0;
+  min-height: calc(50vh - 42px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.text-wrapper .subtitle {
+  font-weight: bold;
+}
+
+.text-wrapper.black .subtitle {
+  color: white;
+}
+
+.text-wrapper .backdrop {
+  position: relative;
+  display: inline-block;
+}
+
+.text-wrapper .text {
+  font-size: 90px;
+  line-height: 1;
+}
+
+.note {
+  color: red;
+  margin: 0;
+  padding: 10px;
+}
